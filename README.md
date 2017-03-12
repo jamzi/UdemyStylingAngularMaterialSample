@@ -1,0 +1,4 @@
+- Make sure you have NodeJS and Angular CLI installed (npm install -g @angular/cli)
+- Open command-line and navigate to step you want to perform
+- Run: npm install
+- Run: ng serve
