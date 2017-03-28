@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ContactsService } from "../contacts.service";
+import { ContactsService } from "app/contacts.service";
 
 @Component({
   selector: 'app-popular',
@@ -17,5 +17,4 @@ export class PopularComponent implements OnInit {
   ngOnInit() {
     this.contacts = this.contactsService.getContacts().slice(0,3);
   }
-
 }

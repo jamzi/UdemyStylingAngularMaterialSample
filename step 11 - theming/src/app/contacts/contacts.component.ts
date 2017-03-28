@@ -57,5 +57,5 @@ export class ContactsComponent implements OnInit {
 export class AddContactDialog {
   constructor(
     public dialogRef: MdDialogRef<AddContactDialog>
-  ) {}
+  ) { }
 }

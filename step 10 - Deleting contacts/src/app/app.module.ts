@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { ContactsComponent, AddContactDialog } from './contacts/contacts.component';
 import { PopularComponent } from './popular/popular.component';
 
-import { ContactsService } from "./contacts.service";
+import { ContactsService } from "app/contacts.service";
 
 const routes: Routes = [
   {
