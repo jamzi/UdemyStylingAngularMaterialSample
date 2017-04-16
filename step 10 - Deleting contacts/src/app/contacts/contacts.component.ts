@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ContactsService } from "../contacts.service";
+import { ContactsService } from "app/contacts.service";
 import { MdDialog, MdDialogRef } from "@angular/material";
 
 @Component({
@@ -43,19 +43,14 @@ export class ContactsComponent implements OnInit {
       <input mdInput #contactName placeholder="Contact name">
     </md-input-container>
     <md-input-container>
-      <input mdInput #contactNumber placeholder="Contact number">
+      <input #contactNumber mdInput placeholder="Contact number"> 
     </md-input-container>
-    <button md-raised-button color="primary"
-      (click)="dialogRef.close({
-        name: contactName.value,
-        number: contactNumber.value
-      })">Save</button>
-    <button md-raised-button (click)="dialogRef.close()">
-    Close dialog</button>
-  `
+    <button md-raised-button color="primary" (click)="dialogRef.close({ name: contactName.value, number: contactNumber.value})">Save</button>
+    <button md-raised-button (click)="dialogRef.close()">Close dialog</button>`
 })
 export class AddContactDialog {
   constructor(
-    public dialogRef: MdDialogRef<AddContactDialog>
-  ) { }
+    public dialogRef: MdDialogRef<AddContactDialog>) { }
+
 }
+

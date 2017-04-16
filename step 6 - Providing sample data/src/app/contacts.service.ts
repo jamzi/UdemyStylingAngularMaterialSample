@@ -13,21 +13,20 @@ export class ContactsService {
   getContacts() {
     let contacts: IContact[] = [{
       name: 'Janez',
-      number: '15331513513'
+      number: '1294124824'
     },
     {
       name: 'John',
-      number: '23532523523'
+      number: '3132141131313'
     },
     {
       name: 'Mary',
-      number: '999876666'
+      number: '4312413313131'
     },
     {
       name: 'Jasmine',
-      number: '3525325923'
-    }
-    ];
+      number: '5313112424423'
+    }];
     return contacts;
   }
 }

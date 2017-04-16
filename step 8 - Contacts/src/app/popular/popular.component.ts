@@ -9,7 +9,7 @@ import { ContactsService } from "app/contacts.service";
 })
 export class PopularComponent implements OnInit {
   contacts: any[];
-
+  
   constructor(
     private contactsService: ContactsService
   ) { }

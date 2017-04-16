@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ContactsService } from "../contacts.service";
+import { ContactsService } from "app/contacts.service";
 
 @Component({
   selector: 'app-contacts',
@@ -8,6 +8,7 @@ import { ContactsService } from "../contacts.service";
   styleUrls: ['./contacts.component.css']
 })
 export class ContactsComponent implements OnInit {
+  
   contacts: any[];
 
   constructor(
