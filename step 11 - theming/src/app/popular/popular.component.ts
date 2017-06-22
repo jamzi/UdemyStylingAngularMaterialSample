@@ -9,12 +9,12 @@ import { ContactsService } from "app/contacts.service";
 })
 export class PopularComponent implements OnInit {
   contacts: any[];
-  
+
   constructor(
     private contactsService: ContactsService
   ) { }
 
   ngOnInit() {
-    this.contacts = this.contactsService.getContacts().slice(0,3);
+    this.contacts = this.contactsService.getContacts().slice(0, 3);
   }
 }

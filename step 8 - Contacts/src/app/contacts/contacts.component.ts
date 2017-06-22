@@ -10,11 +10,11 @@ import { ContactsService } from "app/contacts.service";
 export class ContactsComponent implements OnInit {
   
   contacts: any[];
-
+ 
   constructor(
     private contactsService: ContactsService
   ) { }
-
+ 
   ngOnInit() {
     this.contacts = this.contactsService.getContacts();
   }
