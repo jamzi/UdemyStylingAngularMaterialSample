@@ -1,15 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdButtonModule, MdCardModule, MdInputModule, MdSidenavModule, MdToolbarModule, MdListModule, MdIconModule, MdDialogModule } from '@angular/material';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ContactsComponent, AddContactDialog } from './contacts/contacts.component';
 import { PopularComponent } from './popular/popular.component';
-import { ContactsService } from "app/contacts.service";
+import { ContactsService } from "./contacts.service";
 
-const routes: Routes = [
+const routes: Routes = [	
   {
     path: '',
     component: PopularComponent
@@ -34,7 +34,6 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(routes),
     MdButtonModule,
     MdCardModule,
     MdInputModule,
@@ -42,7 +41,8 @@ const routes: Routes = [
     MdToolbarModule,
     MdListModule,
     MdIconModule,
-    MdDialogModule
+    MdDialogModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [ContactsService],
   bootstrap: [AppComponent],

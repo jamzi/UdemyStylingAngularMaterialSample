@@ -1,14 +1,14 @@
-import { PhonebookPage } from './app.po';
+import { AppPage } from './app.po';
 
 describe('phonebook App', () => {
-  let page: PhonebookPage;
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new PhonebookPage();
+    page = new AppPage();
   });
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });

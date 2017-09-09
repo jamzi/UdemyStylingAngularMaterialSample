@@ -9,10 +9,10 @@
     </md-sidenav>
     <md-toolbar color="primary">
         <button md-icon-button (click)="menu.open()">
-        <md-icon>menu</md-icon>
-    </button> {{ title }}
-    <span class="example-spacer"></span>
-    <button md-button (click)="isDarkTheme = !isDarkTheme">Toggle theme</button>
+          <md-icon>menu</md-icon>
+      </button> {{ title }}
+        <span class="example-spacer"></span>
+        <button md-button (click)="isDarkTheme = !isDarkTheme">Toggle theme</button>
     </md-toolbar>
     <div class="main-content">
         <router-outlet></router-outlet>

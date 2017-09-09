@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { MdDialog, MdDialogRef } from "@angular/material";
-
-import { ContactsService } from "app/contacts.service";
+import { Component, OnInit, Inject } from '@angular/core';
+import { ContactsService } from "../contacts.service";
+import { MdDialog, MdDialogRef, MD_DIALOG_DATA } from "@angular/material";
 
 @Component({
   selector: 'app-contacts',
@@ -49,3 +48,4 @@ export class AddContactDialog {
   constructor(
     public dialogRef: MdDialogRef<AddContactDialog>) { }
 }
+

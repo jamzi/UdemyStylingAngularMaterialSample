@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
- 
+
 interface IContact {
   name: string;
   number: string;
 }
- 
+
 @Injectable()
 export class ContactsService {
- 
+
   constructor() { }
- 
+
   getContacts() {
     let contacts: IContact[] = [{
       name: 'Janez',

@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdButtonModule, MdCardModule, MdInputModule, MdSidenavModule, MdToolbarModule, MdListModule, MdIconModule, MdDialogModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { PopularComponent } from './popular/popular.component';
+import { ContactsService } from "./contacts.service";
 
 @NgModule({
   declarations: [
@@ -23,9 +24,9 @@ import { PopularComponent } from './popular/popular.component';
     MdToolbarModule,
     MdListModule,
     MdIconModule,
-    MdDialogModule
+    MdDialogModule 
   ],
-  providers: [],
+  providers: [ContactsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

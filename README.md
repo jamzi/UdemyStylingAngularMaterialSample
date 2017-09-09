@@ -1,3 +1,8 @@
+## 9.9.2017 - Updated Angular CLI, Angular Material, Angular
+- @angular/cli 1.4.1
+- angular/material2 2.0.0-beta.10
+- @angular 4.2.4
+
 ## 22.6.2017 - Updated Angular CLI, Angular Material, Angular
 - @angular/cli 1.1.3
 - angular/material2 2.0.0-beta.7

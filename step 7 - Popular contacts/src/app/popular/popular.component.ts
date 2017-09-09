@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import { ContactsService } from "app/contacts.service";
+import { ContactsService } from "../contacts.service";
 
 @Component({
   selector: 'app-popular',
@@ -8,13 +7,15 @@ import { ContactsService } from "app/contacts.service";
   styleUrls: ['./popular.component.css']
 })
 export class PopularComponent implements OnInit {
+
   contacts: any[];
+  
+    constructor(
+      private contactsService: ContactsService
+    ) { }
+  
+    ngOnInit() {
+      this.contacts = this.contactsService.getContacts().slice(0,3);
+    }
 
-  constructor(
-    private contactsService: ContactsService
-  ) { }
-
-  ngOnInit() {
-    this.contacts = this.contactsService.getContacts().slice(0, 3);
-  }
 }
